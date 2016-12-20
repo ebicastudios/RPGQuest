@@ -6,7 +6,7 @@
  *                      Main_Menu.cs
  *                  
  * Created by:      Brandon Bush (ebicastudios@gmail.com)
- * Last Modified:   12/18/2016
+ * Last Modified:   12/19/2016
  * ExceptionSafety: Undetermined
  * License:         Ebica Studios Closed Source
  */
@@ -16,207 +16,79 @@ using System.Collections;
 
 public class Show_Credits : MonoBehaviour {
 
-    Camera_Controller cam;                              // Gives access to special camera functions
+    float fade_time = 1.0f;                                                             // Factor controlling fade time for the fade functions
+    float wait_time = 1.0f;                                                             // Factor controlling wait time for display
 
-    SpriteRenderer[] screens;                                     // Holds SpriteRenderer of credit screens for fading
+    Camera_Controller cam;                                                              // Holds Camera_Controller component for special camera functions (move)
+    Global global;                                                                      // Holds Global component for special functions (FadeIn/FadeOut)
 
-    public bool debug = false;
-
-    // Acquire GameObjects and initialize some variables
-    void Awake()
+    void Awake()                                                                        // Acquire GameObjects, Scripts, and Initialize some variables
     {
-        cam = GameObject.Find("Camera").GetComponent<Camera_Controller>();  // Acquire Camera_Controller access
-        screens = new SpriteRenderer[6];                        // Initialize screens list to size of $HOW_MANY_SCREENS
-
-        screens[0] = GameObject.Find("credits_1").GetComponent<SpriteRenderer>();        // Acquire SpriteRenderer Components of the credit screens.
-        screens[1] = GameObject.Find("credits_2").GetComponent<SpriteRenderer>();
-        screens[2] = GameObject.Find("credits_3").GetComponent<SpriteRenderer>();
-        screens[3] = GameObject.Find("credits_4").GetComponent<SpriteRenderer>();
-        screens[4] = GameObject.Find("credits_5").GetComponent<SpriteRenderer>();
-        screens[5] = GameObject.Find("credits_6").GetComponent<SpriteRenderer>();
-
-        Color[] alpha = new Color[6];                                               // Initialize a new color array used to control the initial alpha channels of the screens
-
-        for(int i = 0; i < alpha.Length; i++)                                       // Loop through the arrays and make all the credit screens transparent
-        {
-            alpha[i] = screens[i].color;                // Set i-th component of alpha to the color of the i-th credit screen
-            alpha[i].a = 0;                             // Adjust the alpha value to 0 (transparent)
-            screens[i].color = alpha[i];                // Assign the new transparent color to the i-th credit screen;
-        }
-
-
-
+        cam = GameObject.Find("Camera").GetComponent<Camera_Controller>();              // Acquire access to the Camera's Camera_Controller
+        global = GameObject.Find("Functions").GetComponent<Global>();                   // Acquire access to global functions
     }
-
-    public void Activate()
+    public void Activate()                                                              // Activate the script
     {
-        StartCoroutine(run());
+        StartCoroutine(run());                                                          // Start CoRoutine
     }
-
     IEnumerator run()
     {
-        if (!debug)
-        {
-            cam.move("credits_1");
-            while (screens[0].color.a < 1)                                                                           // Fade-in screen
-            {
-                Color alpha;                                                                                            // Color variable to adjust the alpha transparency of the screens for fading
-                alpha = screens[0].color;                                                                            // Get current color value of fade_what
-                alpha.a += 1 / 255f;                                                                                      // Adds 1/255 to the alpha transparency (255 discreet steps)
-                screens[0].color = alpha;                                                                            // Assign new alpha channel to fade_what
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));                                   // Wait
-            }
+        cam.move("credits_1");                                                          // Move the camera to credits_1 position
+        global.FadeIn("credits_1", fade_time);                                          // Fade In credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade in to finish
+        yield return new WaitForSeconds(wait_time);                                     // Wait for display
+        global.FadeOut("credits_1", fade_time);                                         // Fade Out credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade out to finish
 
-            yield return new WaitForSeconds(2.0f);
+        cam.move("credits_2");                                                          // Move the camera to credits_2 position
+        global.FadeIn("credits_2", fade_time);                                          // Fade In credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade in to finish
+        yield return new WaitForSeconds(wait_time);                                     // Wait for display
+        global.FadeOut("credits_2", fade_time);                                         // Fade Out credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade out to finish
 
-            while (screens[0].color.a > 0)                                                                           // Fade-in screen
-            {
-                Color alpha;                                                                                            // Color variable to adjust the alpha transparency of the screens for fading
-                alpha = screens[0].color;                                                                            // Get current color value of fade_what
-                alpha.a -= 1 / 255f;                                                                                      // Adds 1/255 to the alpha transparency (255 discreet steps)
-                screens[0].color = alpha;                                                                            // Assign new alpha channel to fade_what
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));                                   // Wait
-            }
+        cam.move("credits_3");                                                          // Move the camera to credits_3 position
+        global.FadeIn("credits_3", fade_time);                                          // Fade In credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade in to finish
+        yield return new WaitForSeconds(wait_time);                                     // Wait for display
+        global.FadeOut("credits_3", fade_time);                                         // Fade Out credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade out to finish
 
-            cam.move("credits_2");
-            while (screens[1].color.a < 1)                                                                          // Second credits screen
-            {
-                Color alpha;
-                alpha = screens[1].color;
-                alpha.a += 1 / 255f;
-                screens[1].color = alpha;
+        cam.move("credits_4");                                                          // Move the camera to credits_4 position
+        global.FadeIn("credits_4", fade_time);                                          // Fade In credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade in to finish
+        yield return new WaitForSeconds(wait_time);                                     // Wait for display
+        global.FadeOut("credits_4", fade_time);                                         // Fade Out credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade out to finish
 
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
+        cam.move("credits_5");                                                          // Move the camera to credits_5 position
+        global.FadeIn("credits_5", fade_time);                                          // Fade In credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade in to finish
+        yield return new WaitForSeconds(wait_time);                                     // Wait for display
+        global.FadeOut("credits_5", fade_time);                                         // Fade Out credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade out to finish
 
-            }
-            yield return new WaitForSeconds(2.0f);
+        cam.move("credits_6");                                                          // Move the camera to credits_6 position
+        global.FadeIn("credits_6", fade_time);                                          // Fade In credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade in to finish
+        yield return new WaitForSeconds(wait_time);                                     // Wait for display
+        global.FadeOut("credits_6", fade_time);                                         // Fade Out credits screen
+        while (global.running_process) { yield return null; }                           // Wait for fade out to finish
 
-            while (screens[1].color.a > 0)
-            {
-                Color alpha;
-                alpha = screens[1].color;
-                alpha.a -= 1 / 255f;
-                screens[1].color = alpha;
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-            }
+        string[] fade_what = new string[7];                                             // Need to fade multiple objects. This string array holds these objects
+        fade_what[0] = "background_main_menu";                                          // Main Menu Background
+        fade_what[1] = "main_cursor";                                                   // Main Cursor
+        fade_what[2] = "new_game";                                                      // New Game Option
+        fade_what[3] = "load_game";                                                     // Load Game Option
+        fade_what[4] = "settings";                                                      // Settings Option
+        fade_what[5] = "credits";                                                       // Credits Option
+        fade_what[6] = "exit";                                                          // Exit Option
 
-            cam.move("credits_3");
-            while (screens[2].color.a < 1)                                                                          // Second credits screen
-            {
-                Color alpha;
-                alpha = screens[2].color;
-                alpha.a += 1 / 255f;
-                screens[2].color = alpha;
-
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-
-            }
-            yield return new WaitForSeconds(2.0f);
-
-            while (screens[2].color.a > 0)
-            {
-                Color alpha;
-                alpha = screens[2].color;
-                alpha.a -= 1 / 255f;
-                screens[2].color = alpha;
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-            }
-
-            cam.move("credits_4");
-            while (screens[3].color.a < 1)                                                                          // Second credits screen
-            {
-                Color alpha;
-                alpha = screens[3].color;
-                alpha.a += 1 / 255f;
-                screens[3].color = alpha;
-
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-
-            }
-            yield return new WaitForSeconds(2.0f);
-
-            while (screens[3].color.a > 0)
-            {
-                Color alpha;
-                alpha = screens[3].color;
-                alpha.a -= 1 / 255f;
-                screens[3].color = alpha;
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-            }
-
-            cam.move("credits_5");
-            while (screens[4].color.a < 1)                                                                          // Second credits screen
-            {
-                Color alpha;
-                alpha = screens[4].color;
-                alpha.a += 1 / 255f;
-                screens[4].color = alpha;
-
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-
-            }
-            yield return new WaitForSeconds(2.0f);
-
-            while (screens[4].color.a > 0)
-            {
-                Color alpha;
-                alpha = screens[4].color;
-                alpha.a -= 1 / 255f;
-                screens[4].color = alpha;
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-            }
-
-            cam.move("credits_6");
-            while (screens[5].color.a < 1)                                                                          // Second credits screen
-            {
-                Color alpha;
-                alpha = screens[5].color;
-                alpha.a += 1 / 255f;
-                screens[5].color = alpha;
-
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-
-            }
-            yield return new WaitForSeconds(2.0f);
-
-            while (screens[5].color.a > 0)
-            {
-                Color alpha;
-                alpha = screens[5].color;
-                alpha.a -= 1 / 255f;
-                screens[5].color = alpha;
-                yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));
-            }
-        }
-
-        cam.move("background_main_menu");
-        SpriteRenderer[] colors = new SpriteRenderer[7];                                            // Acquire SpriteRenderer components of the main menu and all options
-        colors[0] = GameObject.Find("background_main_menu").GetComponent<SpriteRenderer>();
-        colors[1] = GameObject.Find("main_cursor").GetComponent<SpriteRenderer>();
-        colors[2] = GameObject.Find("new_game").GetComponent<SpriteRenderer>();
-        colors[3] = GameObject.Find("load_game").GetComponent<SpriteRenderer>();
-        colors[4] = GameObject.Find("settings").GetComponent<SpriteRenderer>();
-        colors[5] = GameObject.Find("credits").GetComponent<SpriteRenderer>();
-        colors[6] = GameObject.Find("exit").GetComponent<SpriteRenderer>();
-
-        while (GameObject.Find("background_main_menu").GetComponent<SpriteRenderer>().color.a < 1)                                                                           // Fade-out screen
-        {
-            Color[] mod_color = new Color[7];
-            for (int i = 0; i < colors.Length; i++)         // Fade main menu and all selection objects out
-            {
-                mod_color[i] = colors[i].color;
-                mod_color[i].a += 1 / 51f;
-                colors[i].color = mod_color[i];
-            }
-            yield return new WaitForSeconds((2.0f / 255f) * 0.25f);
-            Debug.Log("Test");
-        }
-
-        Debug.Log("Test");
-        GameObject.Find("Functions").GetComponent<Main_Menu>().enabled = true;      // Turn over control back to the Main Menu
-        Debug.Log("Test");
-
+        cam.move("background_main_menu");                                               // Move the Camera to the Main Menu Screen position
+        global.FadeIn(fade_what, fade_time);                                            // Fade in the Main Menu, Main Cursor, and Options
+        while (global.running_process) { yield return null; }                           // Wait until the fade in is finished
+        GameObject.Find("Functions").GetComponent<Main_Menu>().enabled = true;          // Turn over control to the Main Menu
+        yield return null;
     }
-
 
 }

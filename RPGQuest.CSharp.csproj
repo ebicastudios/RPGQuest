@@ -73,7 +73,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Automatic\Camera_Controller.cs" />
+    <Compile Include="Assets\Scripts\Automatic\Make_Transparent.cs" />
+    <Compile Include="Assets\Scripts\Debug_Script.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
+    <Compile Include="Assets\Scripts\Functions\Global.cs" />
     <Compile Include="Assets\Scripts\Functions\Main_Menu.cs" />
     <Compile Include="Assets\Scripts\Functions\New_Game.cs" />
     <Compile Include="Assets\Scripts\Functions\Show_Credits.cs" />

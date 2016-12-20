@@ -20,25 +20,4 @@ public class Camera_Controller : MonoBehaviour {
         pos.z = -100f;                                                                                          // Pull the camera back
         this.GetComponent<Transform>().position = pos;                                                          // Update the camera's transform function
     }
-    /* Work on this implementation later
-    // Fade in or out an asset with a SpriteRenderer
-    public void fadeIn(string what, string what_object_next, string next_func)                                                           // Regular function to call the coroutine
-    {
-        StartCoroutine(fade_in(what, what_object_next, next_func));                                                               // Call the associated coroutine
-    }
-
-    IEnumerator fade_in(string what, string what_object_next, string next_func)
-    {
-        SpriteRenderer fade_what = GameObject.Find(what).GetComponent<SpriteRenderer>();                        // Acquire the SpriteRenderer
-        while (fade_what.color.a < 0)                                                                           // Fade-in screen
-        {
-            Color alpha;                                                                                            // Color variable to adjust the alpha transparency of the screens for fading
-            alpha = fade_what.color;                                                                            // Get current color value of fade_what
-            alpha.a += 1 / 255f;                                                                                      // Adds 1/255 to the alpha transparency (255 discreet steps)
-            fade_what.color = alpha;                                                                            // Assign new alpha channel to fade_what
-            yield return new WaitForSecondsRealtime((float)(2.0 / 255.0f - 0.2f));                                   // Wait
-        }
-
-    }
-*/
 }
