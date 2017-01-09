@@ -27,7 +27,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -37,7 +37,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -72,15 +72,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Automatic\Camera_Controller.cs" />
-    <Compile Include="Assets\Scripts\Automatic\Make_Transparent.cs" />
-    <Compile Include="Assets\Scripts\Debug_Script.cs" />
-    <Compile Include="Assets\Scripts\Enums.cs" />
-    <Compile Include="Assets\Scripts\Functions\Global.cs" />
-    <Compile Include="Assets\Scripts\Functions\Main_Menu.cs" />
-    <Compile Include="Assets\Scripts\Functions\New_Game.cs" />
-    <Compile Include="Assets\Scripts\Functions\Show_Credits.cs" />
-    <Compile Include="Assets\Scripts\Functions\Show_Splash.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\DialogueObjects\DialogueEditorDialogueObject.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\DialogueObjects\DialogueEditorDragPhaseObject.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\DialogueObjects\DialogueEditorGlobalVariablesContainer.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\DialogueObjects\DialogueEditorMasterObject.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\DialogueObjects\DialogueEditorMasterObjectWrapper.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\DialogueObjects\DialogueEditorPhaseObject.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\DialogueObjects\DialogueEditorSelectionObject.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\ThemeObjects\DialogueEditorThemeObject.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\ThemeObjects\DialogueEditorThemesContainer.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\VariableObjects\DialogueEditorVariableObject.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Objects\VariableObjects\DialogueEditorVariablesContainer.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Statics\DialogueEditorStatics.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Statics\DialogueEditorWaitTypes.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Statics\VariableEditorGetEquation.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Statics\VariableEditorScopes.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Statics\VariableEditorSetEquation.cs" />
+    <Compile Include="Assets\Dialoguer\DialogueEditor\Scripts\Statics\VariableEditorTypes.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Core\Dialoguer.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Core\DialoguerDialogueManager.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Core\DialoguerEventManager.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Managers\DialoguerDataManager.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Monobehaviours\WaitPhaseComponent.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Objects\DialoguerData.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Objects\DialoguerDialogue.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Objects\DialoguerGlobalVariables.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Objects\DialoguerTextData.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Objects\DialoguerTheme.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Objects\DialoguerVariables.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\AbstractDialoguePhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\BranchedTextPhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\ConditionalPhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\EmptyPhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\EndPhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\SendMessagePhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\SetVariablePhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\TextPhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Phases\WaitPhase.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Statics\DialoguerTextPhaseType.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Statics\PhaseState.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Statics\PhaseVarSubStrings.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Utilities\DialoguerSerializableDictionary.cs" />
+    <Compile Include="Assets\Dialoguer\Dialoguer\Scripts\Utilities\DialoguerUtils.cs" />
+    <Compile Include="Assets\DialoguerExamples\Legacy GUI\ClassicRpg\Scripts\DialogueriTween.cs" />
+    <Compile Include="Assets\DialoguerExamples\Legacy GUI\ClassicRpg\Scripts\LegacyClassicRpgGui.cs" />
+    <Compile Include="Assets\DialoguerExamples\Legacy GUI\NextGenRpg\Scripts\LegacyNextGenRpgGui.cs" />
+    <Compile Include="Assets\DialoguerExamples\Legacy GUI\UnityDefault\UnityDefaultGui.cs" />
+    <Compile Include="Assets\DialoguerExamples\_ExampleSceneAssets\Classes\DialoguerExampleStart.cs" />
+    <Compile Include="Assets\DialoguerOutput\Enums\DialoguerDialogues.cs" />
+    <Compile Include="Assets\Scripts\Behavior\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\GlobalVars.cs" />
+    <Compile Include="Assets\Scripts\IO\FieldController.cs" />
+    <Compile Include="Assets\Scripts\IO\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Instantiable\IScreens.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Automatic\Camera_Controller.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Automatic\Disable_UI.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Automatic\Make_Transparent.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Explore.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Functions\Battle.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Functions\Global.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Functions\Main_Menu.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Functions\Show_Credits.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Functions\Show_Splash.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\GameObjects.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Gameplay\Battle_Scripts\Goblin.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Gameplay\Character.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Gameplay\Enemy.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Instantiable.cs" />
+    <Compile Include="Assets\_Legacy\Scripts\Variables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\DialoguerExamples\_README.txt" />
+    <None Include="Assets\Dialoguer_README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
